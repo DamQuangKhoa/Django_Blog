@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 from django.urls import reverse
 
-# from taggit.managers import TaggableManager
+from taggit.managers import TaggableManager
 
 
 class PublishedManager(models.Manager):
@@ -18,7 +18,7 @@ class PublishedManager(models.Manager):
 
 class Post(models.Model):
      # Our custom manager.
-    # tags = TaggableManager()
+    tags = TaggableManager()
 
     STATUS_CHOICES = (
         ('draft', 'Draft'),
