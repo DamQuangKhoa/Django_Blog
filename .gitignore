@@ -1,4 +1,5 @@
 ### Django ###
+mysite/blog/migrations
 *.log
 *.pot
 *.pyc
